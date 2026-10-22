@@ -1,6 +1,6 @@
 ---
 name: yes-chemistry
-description: "Lead the sales conversation by creating the right feeling in the right order. Five brain chemicals (dopamine, cortisol, serotonin, oxytocin, endorphins) mapped to the 8 Steps of the Repeatable Sale. Audits a call transcript, preps your next call, and writes the day-one welcome that kills buyer's remorse. Free Claude Code skill by Strategy Sprints."
+description: "Lead the sales conversation by creating the right feeling in the right order. Five brain chemicals (dopamine, cortisol, serotonin, oxytocin, endorphins) mapped to the 8 Steps of the Repeatable Sale. Audits a call transcript or any piece of content (email, post, article, script, DM), preps your next call, and writes the day-one welcome that kills buyer's remorse. Free Claude Code skill by Strategy Sprints."
 ---
 
 # /yes-chemistry: the right feeling, in the right order
@@ -10,6 +10,7 @@ People decide on feeling and defend the decision with logic afterwards. A call t
 Usage:
 - `/yes-chemistry`: coaching session. One question at a time about how you sell today, ending in your score and ONE move for this week.
 - `/yes-chemistry audit <transcript file>`: score a recorded call (Zoom, Gong, Granola, Otter export). Where each feeling showed up, where the order broke, 3 fixes.
+- `/yes-chemistry copy <draft or file>`: check any piece of content (email, LinkedIn post, article, newsletter, video script, DM, landing page) for the same order of feelings, then rewrite it so it lands in that order.
 - `/yes-chemistry prep "<who you're meeting + what you know>"`: one question per step for your next call, in plain spoken words.
 - `/yes-chemistry welcome "<your offer>"`: the day-one welcome message that closes the buyer's-remorse gap right after they pay.
 
@@ -75,6 +76,27 @@ Then: the score table, the verdict, the one broken moment that costs the most, a
 2. Read the whole transcript yourself. Confirm or overrule every flag (a price mentioned as "we'll talk price later" is not a price). Score M1-M7 with a quote as evidence for each.
 3. Output: a chemistry timeline (line numbers → feeling created or missed), the score table, the verdict, then **3 fixes**, each with the exact sentence to say instead and where in the call.
 4. Privacy: a transcript is the buyer's words. Never paste it anywhere else, never quote it outside the audit.
+
+## Mode: copy (`/yes-chemistry copy <draft>`)
+Content is a sales conversation where the reader can't answer back. The same order applies. Score each moment 0-2. Short pieces (a DM, a 3-line post) only score the moments they can carry, but the order still has to hold.
+
+| # | Moment in the copy | 0 | 2 |
+|---|---|---|---|
+| C1 | **Seen** (dopamine + oxytocin) | Opens on us, our product, or a generic claim | Opens in the reader's world, in their words, a moment they recognise |
+| C2 | **Rabbit hole** (dopamine) | A list of 5 shallow problems | ONE problem, gone deep enough to make them curious |
+| C3 | **Stakes** (dopamine) | Problem stays abstract | Tied to what they care about now (deals, the new hire, evenings back) |
+| C4 | **Cost** (cortisol, small dose) | Missing, or fear manufactured (fake deadline, scare stat) | The reader's own real cost of doing nothing, named calmly, BEFORE any offer |
+| C5 | **Picture of the result** (dopamine peak) | Vague ("grow faster") | Concrete scene of the result they want |
+| C6 | **Offer after pain, with proof** (serotonin) | Offer or price before C4, or no proof | The offer comes after the cost, next to real proof, calm, no begging |
+| C7 | **Belonging + one move** (oxytocin + endorphins) | Ends with "let me know" or a pile of CTAs | One concrete move the reader can do this week, and a sense of company (community, "together") |
+
+Red flags (each is a FIX that must be rewritten before the piece moves on):
+- **OFFER BEFORE PAIN**: the offer, price or CTA shows up before the reader has felt the cost.
+- **FAKE URGENCY**: cortisol from invented scarcity, a deadline that isn't real, or fear about the reader's character. Delete it.
+- **NO RABBIT HOLE**: the piece skims several problems and goes deep on none.
+- **COLD ENDING**: no belonging and no single move at the end.
+
+Output: the score table (applicable moments only, with a quote as evidence), the flags, then **the rewritten draft** with every flag and every 0 fixed. The critique is never the deliverable, the rewrite is. Keep the author's voice and length (tighter, not longer). Never invent proof.
 
 ## Mode: prep (`/yes-chemistry prep "<context>"`)
 Research what you can first (their company, role, what they posted). Never ask the buyer something you could have looked up. Then give one spoken question per step, tailored to them, plus the one thing to NOT do on this call (usually: no deck, no price before Step 4). Max one screen.

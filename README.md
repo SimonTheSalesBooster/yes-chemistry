@@ -44,6 +44,7 @@ Your buyer gets the same bitter few seconds right after signing. `/yes-chemistry
 |---|---|
 | `/yes-chemistry` | A coaching session, one question at a time, ending in your score and ONE move for this week |
 | `/yes-chemistry audit call.txt` | Your recorded call scored: where each feeling showed up, where the order broke, 3 fixes with the exact words |
+| `/yes-chemistry copy draft.md` | Your email, post, article or script checked for the same order, then rewritten so the reader feels the cost before they see the offer |
 | `/yes-chemistry prep "<who + what you know>"` | One question per step for your next call, plus the one thing NOT to do on it |
 | `/yes-chemistry welcome "<your offer>"` | The day-one welcome that turns buyer's remorse into belonging |
 
@@ -75,7 +76,7 @@ It's a map, not a lab report. The behaviour research is solid (Damasio, Schultz,
 
 | File | What it is |
 |---|---|
-| `yes-chemistry.md` | The skill: the model, the 8 Steps, the score, 4 modes |
+| `yes-chemistry.md` | The skill: the model, the 8 Steps, the score, 5 modes |
 | `tools/order_check.py` | Talk share, the order of key moments, red flags, self-test |
 | `knowledge/SCIENCE.md` | Sources and honest limits |
 | `examples/buying-experiences.md` | Great and weak buying experiences (Apple, Ritz-Carlton, Zappos, Harley-Davidson, the car dealership) |
